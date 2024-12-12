@@ -23,3 +23,8 @@ Run this application
 cd rust_actixweb_token
 cargo run
 ```
+
+Curl for login
+```
+curl -X POST -d "username=titi&password=test" http://127.0.0.1:8080/login
+```

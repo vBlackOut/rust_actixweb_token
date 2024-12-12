@@ -3,7 +3,9 @@ first project Challenge for Rust Actix Web
 
 ## Authentificated Token 
 This is small program for try developed in rust your mission is complet the route /checktoken
-* cath the token available in the request and define if is correct token or not and check if token are expired
+* cath the token available in the request
+* define if is correct token or not
+* check if token are expired
 
 ## Help
 for install rustup (rust/cargo/rustc... packages) use this cmd:

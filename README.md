@@ -30,7 +30,7 @@ curl for login -> /login
 curl -X POST -d "username=titi&password=test" http://127.0.0.1:8080/login
 ```
 
-curl for your route -> /checktoken
+curl for your custom route -> /checktoken
 ```
 curl -X GET -H "Authorization: YOUR_TOKEN" -d "username=titi&password=test" http://127.0.0.1:8080/checktoken
 ```

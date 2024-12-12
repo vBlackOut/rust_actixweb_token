@@ -1,4 +1,4 @@
-# rust_actixweb_token
+# Challenge 01 - rust_actixweb_token
 first project Challenge for Rust Actiw Web 
 
 ## Authentificated Token 

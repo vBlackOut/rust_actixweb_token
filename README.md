@@ -1,5 +1,5 @@
 # Challenge 01 - rust_actixweb_token
-first project Challenge for Rust Actiw Web 
+first project Challenge for Rust Actix Web 
 
 ## Authentificated Token 
 This is small program for try developed to rust your mission is complet the route /checktoken

@@ -10,3 +10,9 @@ for install rustup (rust/cargo/rustc... packages) use this cmd:
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
+
+Run this application 
+```
+cd rust_actiweb_token
+cargo run
+```

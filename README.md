@@ -26,12 +26,12 @@ cd rust_actixweb_token
 cargo run
 ```
 
-curl for login -> /login
+curl for login initialized token if expired account
 ```
 curl -X POST -d "username=titi&password=test" http://127.0.0.1:8080/login
 ```
 
-curl for your custom route -> /checktoken
+curl for checktoken if token is available and not expired
 ```
 curl -X GET -H "Authorization: YOUR_TOKEN" -d "username=titi&password=test" http://127.0.0.1:8080/checktoken
 ```

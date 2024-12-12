@@ -49,8 +49,8 @@ pub fn update_expired_tokens(
         if let Some(auth_data) = tokens.get_mut(&token_key) {
             let AuthData::Single(credential) = auth_data;
             let expire_date = Local::now().naive_local() + Duration::hours(5);
-            let expire_date = today.format("%d-%m-%Y %H:%M:%S").to_string();
-            credential.expire = expire.clone();
+            let expire_date = expire_date.format("%d-%m-%Y %H:%M:%S").to_string();
+            credential.expire = expire_date.clone();
             println!("Updated token {} to new expire date {}", token_key, expire_date);
         }
     }

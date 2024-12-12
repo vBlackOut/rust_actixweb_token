@@ -33,5 +33,5 @@ curl -X POST -d "username=titi&password=test" http://127.0.0.1:8080/login
 
 curl for checktoken if token is available and not expired
 ```
-curl -X GET -H "Authorization: YOUR_TOKEN" -d "username=titi&password=test" http://127.0.0.1:8080/checktoken
+curl -X GET -H "Authorization: YOUR_TOKEN" http://127.0.0.1:8080/checktoken
 ```

@@ -7,6 +7,8 @@ This is small program for try developed in rust your mission is complet the rout
 * define if is correct token or not
 * check if token are expired
 
+send me your pull request for look your result
+
 ## Help
 for install rustup (rust/cargo/rustc... packages) use this cmd:
 ```

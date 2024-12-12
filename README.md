@@ -10,7 +10,7 @@ This is small program for try developed in rust your mission is complet the rout
 send me your pull request for look your result
 
 you are other route for check credential and assign one expire date to token route is /login  
-send just POST method username and password for check token and assign the expire date
+send just POST method username and password for check token and assign the expire date  
 the token is send to the header in request GET.
 
 ## Help

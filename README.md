@@ -11,6 +11,7 @@ send me your pull request for look your result
 
 you are other route for check credential and assign one expire date to token route is /login  
 send just POST method username and password for check token and assign the expire date
+the token is send to the header in request GET.
 
 ## Help
 for install rust (rustup/cargo/rustc) packages use this cmd:
@@ -24,7 +25,12 @@ cd rust_actixweb_token
 cargo run
 ```
 
-Curl for login
+curl for login -> /login
 ```
 curl -X POST -d "username=titi&password=test" http://127.0.0.1:8080/login
+```
+
+curl for your route -> /checktoken
+```
+curl -X GET -H "Authorization: YOUR_TOKEN" -d "username=titi&password=test" http://127.0.0.1:8080/checktoken
 ```

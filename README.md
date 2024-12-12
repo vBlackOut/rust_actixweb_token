@@ -10,7 +10,7 @@ This is small program for try developed in rust your mission is complet the rout
 send me your pull request for look your result
 
 ## Help
-for install rustup (rustup/cargo/rustc... packages) use this cmd:
+for install rust (rustup/cargo/rustc) packages use this cmd:
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```

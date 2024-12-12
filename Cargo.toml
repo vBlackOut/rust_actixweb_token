@@ -3,7 +3,7 @@ name = "actixwebtest"
 version = "0.1.0"
 edition = "2021"
 readme = "README.md"
-authors = ["Vladimir S", "Vladimir S <support@cuby-hebergs.com>"]
+authors = ["Vladimir S <support@cuby-hebergs.com>"]
 
 [dependencies]
 actix-web = "4"

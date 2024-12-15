@@ -12,12 +12,12 @@ async fn login(credential: Result<web::Form<Credential>, actix_web::Error>) -> i
                 credential.password.clone(),
             )
         }
-        Err(_) => HttpResponse::BadRequest().body("Please complete this route !"),
+        Err(_) => HttpResponse::BadRequest().body("Invalid credentials"),
     }
 }
 
 async fn check_token() -> impl Responder {
-    HttpResponse::BadRequest().body("Invalid credentials")
+    HttpResponse::BadRequest().body("Please complete this route !")
 }
 
 #[actix_web::main]

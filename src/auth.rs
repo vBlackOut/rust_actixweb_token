@@ -21,7 +21,27 @@ pub struct Credential {
     pub password: String,
 }
 
-pub fn check_credential(username: String, password: String) -> HttpResponse {
+// Add trait security for check len password
+pub trait ValidatePassword {
+    fn is_valid(&self) -> bool;
+}
+
+// if password is > 5 is true !
+impl ValidatePassword for String {
+    fn is_valid(&self) -> bool {
+        self.len() > 5
+    }
+}
+
+pub fn check_credential<T>(username: String, password: String) -> HttpResponse
+where
+    T: ValidatePassword, // Add define security password > 5
+{
+
+    if !password.is_valid() {
+        return HttpResponse::Unauthorized().body("Password must be longer than 5 characters");
+    }
+
     let mut tokens = load_tokens();
 
     let expired_tokens = match find_expired_tokens(&username, &password, &tokens) {

@@ -33,7 +33,7 @@ cargo run
 
 curl for login initialized token if expired account
 ```
-curl -X POST -d "username=titi&password=test" http://127.0.0.1:8080/login
+curl -X POST -d "username=titi&password=testtest" http://127.0.0.1:8080/login
 ```
 
 curl for checktoken if token is available and not expired

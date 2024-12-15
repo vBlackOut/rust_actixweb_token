@@ -2,7 +2,7 @@
 first project Challenge for Rust Actix Web 
 
 ## Authentificated Token 
-This is small program for try developed in rust your mission is complet the route /checktoken
+This is small program for try developed in rust your mission is complet the route /checktoken  
 default now the username is not authorized use less 5 charactere for password.
 
 

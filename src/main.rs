@@ -6,16 +6,18 @@ use auth::{check_credential, Credential};
 
 async fn login(credential: Result<web::Form<Credential>, actix_web::Error>) -> impl Responder {
     match credential {
-        Ok(credential) => check_credential(
-            credential.username.clone(),
-            credential.password.clone(),
-        ),
-        Err(_) => HttpResponse::BadRequest().body("Invalid credentials"),
+        Ok(credential) => {
+            check_credential::<String>(
+                credential.username.clone(),
+                credential.password.clone(),
+            )
+        }
+        Err(_) => HttpResponse::BadRequest().body("Please complete this route !"),
     }
 }
 
 async fn check_token() -> impl Responder {
-    HttpResponse::BadRequest().body("Please complete this route !")
+    HttpResponse::BadRequest().body("Invalid credentials")
 }
 
 #[actix_web::main]

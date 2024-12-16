@@ -11,7 +11,7 @@ default now the username is not authorized use less 5 charactere for password.
 * define if is correct token or not
 * check if token are expired
 * the token is send to the header in request GET
-* Return the expiration date for the token if valid.
+* Return the message token is available or is not available.
   
 you are other route for check credential and assign one expire date to token route is /login  
 send just POST method username and password for check token and assign the expire date  
